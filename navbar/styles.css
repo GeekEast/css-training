@@ -26,21 +26,49 @@ header {
 }
 
 .logo {
-  order: 3;
-  margin-left: auto;
+  margin-right: auto;
   cursor: pointer
 }
 
 .nav-links {
-  order:1;
   list-style: none;
 }
 
 .nav-links li {
   display: inline-block;
   padding: 0px 20px 0px 0px;
+  position: relative;
 }
 
+.nav-links > li > ul {
+  display: none;
+  position: absolute;
+  padding-inline-start: 0;
+  padding-top: 12px;
+}
+
+.nav-links > li:hover > ul {
+  display: flex; 
+  flex-direction: row;
+}
+
+.nav-links > li > ul > li {
+  display: block;
+  width: 120px
+}
+
+.nav-links > li > ul > li > ul{
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 0;
+
+}
+
+.nav-links > li > ul > li > ul > li {
+  display: block;
+  padding: 12px 0 12px 2px;
+  width: 130px;
+}
 
 .nav-links li a {
   transition: all 0.5s ease 0s;
@@ -49,7 +77,6 @@ header {
 .nav-links li a:hover {
   color: #0088a9;;
 }
-
 
 button {
   order: 2;
