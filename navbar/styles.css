@@ -20,6 +20,11 @@ header {
   padding: 30px 15%;
 } 
 
+.nav-fixed {
+  width: 100%;
+  position: fixed;
+}
+
 .logo {
   margin-right: auto;
   cursor: pointer
@@ -58,4 +63,8 @@ button {
 
 button:hover {
   background-color: rgba(0,136,169,0.8);
+}
+
+.content {
+  height:3000px;
 }
